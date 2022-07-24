@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/Navbar';
+import ItemListContent from './components/ItemListContent';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <header>
         <Navbar />
       </header>
+      <main>
+        <ItemListContent/>
+      </main>
     </div>
   );
 }

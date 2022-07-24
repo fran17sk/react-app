@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/icono.png'
 import title from '../../assets/img/name.jpg'
-
+import CartWidget from '../CartWidget';
 const Navbar = () =>{
     return (
         <div>
@@ -44,7 +44,7 @@ const Navbar = () =>{
                     </form>
                     <form class="d-flex iconos" id="carrito">
                         <a class="cart-btn">
-                            <i id="cart" class="fas fa-shopping-cart color"></i>
+                            <CartWidget/>
                             <span class ="cart-quantity">0</span>
                         </a>
                         
