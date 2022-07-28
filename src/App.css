@@ -1147,3 +1147,50 @@ border: 3px solid #bb2929;
   width: 50%;
   height: 300px;
 }
+
+
+
+
+/*0*/
+.CardProd{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.buttonItemCount{
+  color: rgb(76, 123, 50);
+  background-color: rgb(255, 255, 255);
+  border: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+.Count{
+  padding: 3px 40px 3px 40px;
+  border: rgb(76, 123, 50) solid 2px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(76, 123, 50);
+  margin: 6px;
+  font-weight: 900;
+}
+.ItemCount{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.buttonAddToCart{
+  background-color: rgb(255, 255, 255);
+  color: rgb(76, 123, 50);
+  border: rgb(76, 123, 50) solid 2px;
+  border-radius: 15px;
+  padding: 5px;
+}
+.buttonAddToCart:hover{
+  background-color: rgb(76, 123, 50);
+  color: rgb(255, 255, 255);
+}
+.textStock{
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 90%;
+  height: 5px;
+}
