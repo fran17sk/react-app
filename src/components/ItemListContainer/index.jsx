@@ -3,7 +3,7 @@ import { products } from '../../utils/products';
 import {ItemList} from '../ItemList'
 import {customFetch} from '../../utils/customFetch'
 import { useState ,useEffect} from 'react';
-
+import { Loader } from '../Loader';
 const ItemListContainer = () => {
     const [listProduct, setListProduct] = useState([])
     const [loading,setLoading] = useState(true)
@@ -23,7 +23,7 @@ const ItemListContainer = () => {
         ?
         <ItemList listProduct={listProduct} />
         :
-        <p className='title'>Cargando....</p>
+        <Loader/>
         }
 
     </>)

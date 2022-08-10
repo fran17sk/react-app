@@ -1,9 +1,44 @@
+import img1 from '../assets/img/productos/giant-talon1.jpg';
+import img2 from '../assets/img/productos/giant-talon-2.jpg';
+import img3 from '../assets/img/productos/giant-talon3.jpg'
+import img4 from '../assets/img/productos/giant-talon4.jpg'
+import img5 from '../assets/img/productos/fathon.jpg'
+import img6 from '../assets/img/productos/advanced.jpg'
+import img7 from '../assets/img/productos/session 8-down.jpg'
+import img8 from '../assets/img/productos/giant-down.jpg'
+import img9 from '../assets/img/productos/advanced-ruta.jpg'
+import img10 from '../assets/img/productos/tcr-ruta.jpg'
+import img11 from '../assets/img/productos/src-ruta.jpg'
+import img12 from '../assets/img/productos/contend-ruta.jpg'
+import img13 from '../assets/img/productos/emonda-ruta.jpg'
+import img14 from '../assets/img/productos/emonda pro-ruta.jpg'
+import img15 from '../assets/img/productos/madone-ruta.jpg'
+import img16 from '../assets/img/productos/domane-ruta.jpg'
+import img17 from '../assets/img/productos/domane-ruta.jpg'
+import img18 from '../assets/img/productos/madone-sl-ruta.jpg'
+import img19 from '../assets/img/productos/vulcan.jpg'
+import img20 from '../assets/img/productos/venzo-stinger.jpg'
+import img21 from '../assets/img/productos/elemento.jpg'
+import img22 from '../assets/img/productos/procaliver9.jpg'
+import img23 from '../assets/img/productos/procaliver8.jpg'
+import img24 from '../assets/img/productos/procaliver7.jpg'
+import img25 from '../assets/img/productos/xcaliver9.jpg'
+import img26 from '../assets/img/productos/xcaliver8.jpg'
+import img27 from '../assets/img/productos/xcaliver7.jpg'
+import img28 from '../assets/img/productos/marlin5.jpg'
+import img29 from '../assets/img/productos/advanced29.jpg'
+import img30 from '../assets/img/productos/session-down.jpg'
+import img31 from '../assets/img/productos/scott-down.jpg'
+import img32 from '../assets/img/productos/atiwit-down.jpg'
+import img33 from '../assets/img/productos/glory-down.jpg'
+
+
 export const products = [
     {
         cod:1001,
         categoria:"MontainBike",
         nombre:"Giant Talon 1",
-        imagen:'../../assets/img/productos/giant-talon1.jpg',
+        imagen:img1,
         marca:"Giant",
         modelo:2022,
         color:"Gris",
@@ -16,7 +51,7 @@ export const products = [
         cod:1002,
         categoria:"MontainBike",
         nombre:"Giant Talon 2",
-        imagen:"giant-talon2.jpg",
+        imagen:img2,
         marca:"Giant",
         modelo:2021,
         color:"Azul metal",
@@ -29,7 +64,7 @@ export const products = [
         cod:1003,
         categoria:"MontainBike",
         nombre:"Giant Talon 3",
-        imagen:"giant-talon3.jpg",
+        imagen:img3,
         marca:"Giant",
         modelo:2021,
         color:"Azul y Negro",
@@ -42,7 +77,7 @@ export const products = [
         cod:1004,
         categoria:"MontainBike",
         nombre:"Giant Talon 4",
-        imagen:"giant-talon4.jpg",
+        imagen:img4,
         marca:"Giant",
         "modelo":2021,
         color:"Negra",
@@ -55,7 +90,7 @@ export const products = [
         cod:1005,
         categoria:"MontainBike",
         nombre:"Giant Fathon",
-        imagen:"fathon.jpg",
+        imagen:img5,
         marca:"Giant",
         "modelo":2021,
         color:"Negra y azul",
@@ -68,7 +103,7 @@ export const products = [
         cod:1006,
         categoria:"MontainBike",
         nombre:"Giant Advanced Pro",
-        imagen:"advanced.jpg",
+        imagen:img6,
         marca:"Giant",
         "modelo":2022,
         color:"Naranja y Negro",
@@ -81,7 +116,7 @@ export const products = [
         cod:1029,
         categoria:"Downhill",
         nombre:"Trek Session 8",
-        imagen:"session 8-down.jpg",
+        imagen:img7,
         marca:"Trek",
         "modelo":2022,
         color:"Verde Militar",
@@ -94,7 +129,7 @@ export const products = [
         cod:1028,
         categoria:"Downhill",
         nombre:"Giant Scorpion",
-        imagen:"giant-down.jpg",
+        imagen:img8,
         marca:"Giant",
         modelo:2022,
         color:"Negro y Azul",
@@ -107,7 +142,7 @@ export const products = [
         cod:1027,
         categoria:"Ruta",
         nombre:"Giant Advanced",
-        imagen:"advanced-ruta.jpg",
+        imagen:img9,
         marca:"Giant",
         modelo:2022,
         color:"Blanca",
@@ -120,7 +155,7 @@ export const products = [
         cod:1026,
         categoria:"Ruta",
         nombre:"Giant TCR",
-        imagen:"tcr-ruta.jpg",
+        imagen:img10,
         marca:"Giant",
         modelo:2022,
         color:"Negro y Azul",
@@ -133,7 +168,7 @@ export const products = [
         cod:1025,
         categoria:"Ruta",
         nombre:"Giant SRC",
-        imagen:"src-ruta.jpg",
+        imagen:img11,
         marca:"Giant",
         modelo:2022,
         color:"Negro y Azul",
@@ -146,7 +181,7 @@ export const products = [
         cod:1024,
         categoria:"Ruta",
         nombre:"Giant Contend",
-        imagen:"contend-ruta.jpg",
+        imagen:img12,
         marca:"Giant",
         modelo:2022,
         color:"Negro y Naranja",
@@ -159,7 +194,7 @@ export const products = [
         cod:1023,
         categoria:"Ruta",
         nombre:"Trek Emonda",
-        imagen:"emonda-ruta.jpg",
+        imagen:img13,
         marca:"Trek",
         modelo:2022,
         color:"Roja y Azul",
@@ -172,7 +207,7 @@ export const products = [
         cod:1022,
         categoria:"Ruta",
         nombre:"Trek Emonda Pro",
-        imagen:"emonda pro-ruta.jpg",
+        imagen:img14,
         marca:"Trek",
         modelo:2022,
         color:"Azul y Celeste",
@@ -185,7 +220,7 @@ export const products = [
         cod:1021,
         categoria:"Ruta",
         nombre:"Trek Madone",
-        imagen:"madone-ruta.jpg",
+        imagen:img15,
         marca:"Trek",
         modelo:2022,
         color:"Negro y gris",
@@ -198,7 +233,7 @@ export const products = [
         cod:1020,
         categoria:"Ruta",
         nombre:"Trek Domane",
-        imagen:"domane-ruta.jpg",
+        imagen:img16,
         marca:"Trek",
         modelo:2022,
         color:"Rojo",
@@ -212,7 +247,7 @@ export const products = [
         cod:1019,
         categoria:"Ruta",
         nombre:"Trek Concept SL",
-        imagen:"concept-ruta.jpg",
+        imagen:img17,
         marca:"Trek",
         modelo:2022,
         color:"Rojo y Negro",
@@ -225,7 +260,7 @@ export const products = [
         cod:1018,
         categoria:"Ruta",
         nombre:"Trek Madone SL",
-        imagen:"madone-sl-ruta.jpg",
+        imagen:img18,
         marca:"Trek",
         modelo:2022,
         color:"Blanca",
@@ -238,7 +273,7 @@ export const products = [
         cod:1017,
         categoria:"MontainBike",
         nombre:"Venzo Vulcan",
-        imagen:"vulcan.jpg",
+        imagen:img19,
         marca:"Venzo",
         modelo:2022,
         color:"Rojo y Negro",
@@ -251,7 +286,7 @@ export const products = [
         cod:1016,
         categoria:"MontainBike",
         nombre:"Venzo Stinger",
-        imagen:"venzo-stinger.jpg",
+        imagen:img20,
         marca:"Venzo",
         modelo:2022,
         color:"Verde",
@@ -264,7 +299,7 @@ export const products = [
         cod:1015,
         categoria:"MontainBike",
         nombre:"Venzo Elemento",
-        imagen:"elemento.jpg",
+        imagen:img21,
         marca:"Venzo",
         modelo:2022,
         color:"Rojo y Negro",
@@ -277,7 +312,7 @@ export const products = [
         cod:1014,
         categoria:"MontainBike",
         nombre:"Trek Pro-Caliver 9",
-        imagen:"procaliver9.jpg",
+        imagen:img22,
         marca:"Trek",
         modelo:2022,
         color:"Negra",
@@ -290,7 +325,7 @@ export const products = [
         cod:1013,
         categoria:"MontainBike",
         nombre:"Trek Pro-Caliver 8",
-        imagen:"procaliver8.jpg",
+        imagen:img23,
         marca:"Trek",
         modelo:2022,
         color:"Gris",
@@ -303,7 +338,7 @@ export const products = [
         cod:1012,
         categoria:"MontainBike",
         nombre:"Trek Pro-Caliver 7",
-        imagen:"procaliver7.jpg",
+        imagen:img24,
         marca:"Trek",
         modelo:2022,
         color:"Negra",
@@ -316,7 +351,7 @@ export const products = [
         cod:1011,
         categoria:"MontainBike",
         nombre:"Trek X-Caliver 9",
-        imagen:"xcaliver9.jpg",
+        imagen:img25,
         marca:"Trek",
         modelo:2022,
         color:"Gris",
@@ -329,7 +364,7 @@ export const products = [
         cod:1010,
         categoria:"MontainBike",
         nombre:"Trek X-Caliver 8",
-        imagen:"xcaliver8.jpg",
+        imagen:img26,
         marca:"Trek",
         modelo:2022,
         color:"Rojo",
@@ -342,7 +377,7 @@ export const products = [
         cod:1009,
         categoria:"MontainBike",
         nombre:"Trek X-Caliver 7",
-        imagen:"xcaliver7.jpg",
+        imagen:img27,
         marca:"Trek",
         modelo:2022,
         color:"Azul",
@@ -355,7 +390,7 @@ export const products = [
         cod:1008,
         categoria:"MontainBike",
         nombre:"Trek Marlin 5",
-        imagen:"marlin5.jpg",
+        imagen:img28,
         marca:"Trek",
         modelo:2022,
         color:"Negro",
@@ -368,7 +403,7 @@ export const products = [
         cod:1007,
         categoria:"MontainBike",
         nombre:"Giant Advanced",
-        imagen:"advanced29.jpg",
+        imagen:img29,
         marca:"Giant",
         modelo:2022,
         color:"Negro y Bordo",
@@ -381,7 +416,7 @@ export const products = [
         cod:1030,
         categoria:"Downhill",
         nombre:"Trek Session 9.6",
-        imagen:"session-down.jpg",
+        imagen:img30,
         marca:"Trek",
         modelo:2022,
         color:"Roja",
@@ -394,7 +429,7 @@ export const products = [
         cod:1031,
         categoria:"Downhill",
         nombre:"Scott XLC",
-        imagen:"scott-down.jpg",
+        imagen:img31,
         marca:"Scott",
         modelo:2022,
         color:"Gris",
@@ -407,7 +442,7 @@ export const products = [
         cod:1032,
         categoria:"Downhill",
         nombre:"Capierre Atiwit",
-        imagen:"atiwit-down.jpg",
+        imagen:img32,
         marca:"Capierre",
         modelo:2022,
         color:"Rojo",
@@ -419,7 +454,7 @@ export const products = [
         cod:1033,
         categoria:"Downhill",
         nombre:"Scott GLory 2022",
-        imagen:"glory-down.jpg",
+        imagen:img33,
         marca:"Scott",
         modelo:2022,
         color:"Dorada",

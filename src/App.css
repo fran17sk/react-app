@@ -861,7 +861,7 @@ border: 3px solid #bb2929;
   border-radius: 80px;
   padding: 10px;
   font-weight: 1000;
-  margin-top: -30px;
+  margin-top: px;
   margin-bottom: 30px;
 }
 .addcarrito{
@@ -1194,3 +1194,76 @@ border: 3px solid #bb2929;
   opacity: 90%;
   height: 5px;
 }
+.listadoFlex{
+  display: flex;
+  flex-flow: row wrap;
+}
+.nameProd{
+  margin-top: -270px;
+  margin-bottom: 230px;
+  font-weight: 900;
+  background-color: rgb(76, 123, 50);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border: #fff solid 1px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.card-prod{
+  margin: 0px 8px 0px 8px;
+  height: 385px;
+}
+
+
+/*LOADER*/
+.cuerpo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+.container{
+  position: relative;
+  width: 125px;
+
+
+}
+.container .loader{
+  max-width: 100px;
+  height: 100px;
+  border: solid 5px rgb(76, 123, 50);
+  border-top: solid 5px rgb(74, 160, 27);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: loader .8s linear infinite;
+}
+@keyframes loader{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.container .mesage{
+  font-weight: 900;
+  position: absolute;
+  color: rgb(76, 123, 50);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: mesage 1s alternate infinite ease-in-out;
+}
+@keyframes mesage{
+  0%{
+    opacity: .2;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*DETAIL PAGE*/
