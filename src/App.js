@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {ItemListContainer} from './components/ItemListContainer';
 import { Navbar } from './components/Navbar';
-import ItemListContent from './components/ItemListContent';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <ItemListContent greeting='AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------AQUI PRODUCTOS--------------------------------------'/>
+        <div className="espacioenblanco"></div>
+        <ItemListContainer />
       </main>
     </div>
   );
