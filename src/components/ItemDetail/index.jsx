@@ -14,6 +14,7 @@ const ItemDetail = (listProduct) => {
                     <h1>{listProduct.nombre}</h1>
                 </div>
 
+            {/* NOSE COMO ACCEDER A LOS PROPIEDADES DEL OBJETO */}
             </div>
         </>
     )
