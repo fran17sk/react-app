@@ -15,7 +15,6 @@ const Item = ({product}) =>{
                     </NavLink>
                     <div className="">
                         <h1 className="nameProd">{product.nombre}</h1>
-                        <ItemCount initial={product.initial} stock={product.stock}></ItemCount>
                     </div>
                 </div>
             </div>
