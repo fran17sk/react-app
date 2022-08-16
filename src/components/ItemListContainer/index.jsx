@@ -1,4 +1,3 @@
-import { ItemCount } from '../ItemCount';
 import { products } from '../../utils/products';
 import {ItemList} from '../ItemList'
 import {customFetch} from '../../utils/customFetch'

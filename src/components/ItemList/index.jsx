@@ -3,7 +3,6 @@ import {Item} from '../Item'
 
 const ItemList = ({listProduct})=>{
 
-    console.log(listProduct)
     return(
         <>
             
@@ -17,5 +16,4 @@ const ItemList = ({listProduct})=>{
         
         )
     }
-
 export {ItemList};
