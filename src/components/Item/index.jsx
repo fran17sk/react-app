@@ -1,5 +1,6 @@
 import {Box,Image} from '@chakra-ui/react'
 import {ItemCount} from '../ItemCount'
+import { NavLink } from 'react-router-dom'
 
 const Item = ({product}) =>{
     console.log(product)
@@ -10,7 +11,9 @@ const Item = ({product}) =>{
                 <Box boxSize='sm'>
                     <Image src={product.imagen} alt={product.nombre} className='img-prod' />
                 </Box>
-                    <h5 class="">${product.precio}</h5>
+                    <NavLink to={`product/${product.cod}`}>
+                        <h5 class="viewDetails">VER DETALLES</h5>
+                    </NavLink>
                     <div class="">
                         <h1 className="nameProd">{product.nombre}</h1>
                         <ItemCount initial={product.initial} stock={product.stock}></ItemCount>

@@ -68,3 +68,78 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+EJERCICIO 1
+program {
+    Poner(Azul)
+    Mover(Norte)
+    Poner(Azul)
+    Mover(Norte)
+    Poner(Azul)
+    Mover(Este)
+    Poner(Azul)
+    Mover(Este)
+    Poner(Azul)
+    Mover(Sur)
+    Poner(Azul)
+    Mover(Sur)
+    Poner(Azul)
+    Mover(Oeste)
+    Poner(Azul)
+}
+
+ejercicio 2 
+procedure ColorearMarco(color){
+  Poner(color)
+  Mover(Norte)
+  Poner(color)
+  Mover(Norte)
+  Poner(color)
+  Mover(Este)
+  Poner(color)
+  Mover(Este)
+  Poner(color)
+  Mover(Sur)
+  Poner(color)
+  Mover(Sur)
+  Poner(color)
+  Mover(Oeste)
+  Poner(color)
+}
+
+ejercicio3
+
+function laSumaEsMasChica(a,b,c){
+  return ((a+b)<c)
+}
+
+ejercicio 4
+function seleccionarVestimenta(temp,color){
+  if(temp>=22){
+    return ('Remera '+color)
+  }
+  else{
+    return ('Campera '+color)
+  }
+}
+
+eh5
+function filtrarLargas(palabras){
+  let palabrafil = []
+  for (let i = 0; i<palabras.length; i++){
+    if (palabras[i].length>6){
+      palabrafil.push(palabras[i])
+    }
+  }
+  return palabrafil
+}
+
+ej6
+function resumenDeLaSuscripcion(cliente){
+  return (cliente.nombre+' se suscribió hace '+(2021-cliente.anioSuscripcion+' años y leyó '+cliente.librosLeidos.length+' libros'))
+}

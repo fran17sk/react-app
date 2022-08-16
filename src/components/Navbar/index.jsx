@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/img/icono.png'
 import title from '../../assets/img/name.jpg'
 import CartWidget from '../CartWidget';
+import { NavLink } from 'react-router-dom';
 const Navbar = () =>{
     return (
         <div>
@@ -19,8 +20,13 @@ const Navbar = () =>{
             <nav className="navbar navbar-expand-lg navbar-dark fondonav menu menu-fixed menudos">
                 <div className="container-fluid">
                     <div>
-                        <a className="navbar-brand" href="#"><img src={logo} alt="logo de la empresa" class="logo rounded-circle"></img></a>
-                        <a className="navbar-brand title" href="#"><img src={title} alt="" className="name"></img></a>
+                        <NavLink to="/">
+                            <a className="navbar-brand" ><img src={logo} alt="logo de la empresa" class="logo rounded-circle"></img></a>
+                        </NavLink>
+                        <NavLink to='/'>
+                            <a className="navbar-brand title" ><img src={title} alt="" className="name"></img></a>
+                        </NavLink>
+                        
                     </div>
                     <form className="d-flex">
                         <input className="form-control me-2 busqueda" onclick="msj()" type="search" placeholder="¿Que estas buscando?" aria-label="Search"></input>
@@ -59,20 +65,30 @@ const Navbar = () =>{
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex opciones">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                                <NavLink to="/">
+                                    <a className="nav-link active" aria-current="page">Inicio</a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="./main/bicicletas.html">BICICLETAS</a>
+                                <NavLink to='/category/MontainBike'>
+                                    <a className="nav-link active" aria-current="page">MontainBike</a>
+                                </NavLink>
+                                
                             </li>
                             
                             <li className="nav-item">
-                                <a className="nav-link active" onclick="msj()" aria-current="page" href="#">COMPONENTES</a>
+                                <NavLink to='/category/Downhill'>
+                                    <a className="nav-link active"  aria-current="page" href="#">Downhill</a>
+                                </NavLink>
+                                
                             </li>
                             <li class="nav-item">
-                                <a className="nav-link active" onclick="msj()" aria-current="page" href="#">ACCESORIOS</a>
+                                <NavLink to='/category/Ruta'>
+                                    <a className="nav-link active"  aria-current="page" href="#">Ruta</a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" onclick="msj()" aria-current="page" href="#">INDUMENTARIA</a>
+                                <a className="nav-link active" aria-current="page" href="#">INDUMENTARIA</a>
                             </li>
                             
                             
