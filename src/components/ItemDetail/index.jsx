@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import img from '../../assets/img/productos/giant-talon1.jpg'
+import { ItemCount } from '../ItemCount';
+import { NavLink } from 'react-router-dom';
 
 const ItemDetail = (listProduct) => {
+
+    const [isAdded,setIsAdded] = useState(false)
+    const onAdd = () => {
+        setIsAdded(true)
+    }
     return (
         <>
             <div className="DetailFlex">
@@ -30,11 +38,16 @@ const ItemDetail = (listProduct) => {
                         <h3 className='varInfo'>$ {listProduct.listProduct.precio}</h3>
                     </div>
                     <div className='infoDetailFlex'>
-                        <h3 className='textInfo'>Stock: </h3>
-                        <h3 className='stockDetail'>{listProduct.listProduct.stock}</h3>
+                    {   
+                        isAdded ?
+                            <NavLink to='/cart'><button className="buttonAddToCart">Ir al Carrito</button></NavLink>
+                        :
+                        <ItemCount initial={listProduct.listProduct.initial} stock={listProduct.listProduct.stock} onAdd={onAdd}/>
+                    }
                     </div>
+                        
+
                 </div>
-            {/* NOSE COMO ACCEDER A LOS PROPIEDADES DEL OBJETO */}
             </div>
             <div className='descripcionDetail'>
                     <p>La {listProduct.listProduct.nombre} es una bicicleta de cross country diseñada para resultar eficiente sobre superficies de montaña gracias a su horquilla de suspensión con bloqueo y a su sencilla transmisión 1x10 Shimano. Se ha diseñado para el mountain bike, pero también está equipada con soportes para portabultos y pata de cabra, por tanto, es una gran opción para las aventuras diarias por la ciudad.</p>
