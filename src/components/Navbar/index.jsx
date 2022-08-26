@@ -51,7 +51,7 @@ const Navbar = () =>{
                     <form className="d-flex iconos" id="carrito">
                         <a className="cart-btn">
                             <CartWidget/>
-                            <span className ="cart-quantity">0</span>
+                            
                         </a>
                         
                         <span>Mi Carrito</span>
