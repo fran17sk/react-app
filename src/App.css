@@ -1327,5 +1327,10 @@ border: 3px solid #bb2929;
 .viewDetails:hover{
   background-color: #fff;
   color: rgb(76, 123, 50);
-  border: 1px solid rgb(76, 123, 50);;
+  border: 1px solid rgb(76, 123, 50);
+}
+.titleCartVacio{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
 }

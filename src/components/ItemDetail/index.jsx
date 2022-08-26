@@ -1,14 +1,19 @@
 import { useState } from 'react';
-import img from '../../assets/img/productos/giant-talon1.jpg'
 import { ItemCount } from '../ItemCount';
 import { NavLink } from 'react-router-dom';
+import { useCartContext } from '../../context/cartContext';
 
 const ItemDetail = (listProduct) => {
 
     const [isAdded,setIsAdded] = useState(false)
-    const onAdd = () => {
+
+    const {addToCart,cartList} = useCartContext()
+
+    const onAdd = (quantity) => {
+        addToCart(listProduct.listProduct,quantity)
         setIsAdded(true)
     }
+
     return (
         <>
             <div className="DetailFlex">
