@@ -66,29 +66,30 @@ const Navbar = () =>{
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex opciones">
                             <li className="nav-item">
                                 <NavLink to="/">
-                                    <span className="nav-link active" aria-current="page">Inicio</span>
+                                    <span className="nav-link active" aria-current="page">INICIO</span>
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/category/MontainBike'>
-                                    <span className="nav-link active" aria-current="page">MontainBike</span>
+                                <NavLink to='/bicicletas'>
+                                    <span className="nav-link active" aria-current="page">BICICLETAS</span>
                                 </NavLink>
                                 
                             </li>
                             
                             <li className="nav-item">
-                                <NavLink to='/category/Downhill'>
-                                    <span className="nav-link active"  aria-current="page" href="#">Downhill</span>
+                                <NavLink to='/proximamente'>
+                                    <span className="nav-link active"  aria-current="page">COMPONENTES</span>
                                 </NavLink>
                                 
                             </li>
                             <li className="nav-item">
-                                <NavLink to='/category/Ruta'>
-                                    <span className="nav-link active"  aria-current="page" href="#">Ruta</span>
+                                <NavLink to='/proximamente'>
+                                    <span className="nav-link active"  aria-current="page">ACCESORIOS</span>
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="">INDUMENTARIA</a>
+                            <NavLink to='/proximamente'><span className="nav-link active" aria-current="page">INDUMENTARIA</span></NavLink>
+                                
                             </li>
                             
                             
@@ -104,10 +105,10 @@ const Navbar = () =>{
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="">PRODUCTO</a>
+                                <NavLink to='/proximamente'><span className="nav-link active" aria-current="page" href="">PRODUCTO</span></NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="">CONTACTO</a>
+                                <NavLink to='/proximamente'><span className="nav-link active" aria-current="page" href="">CONTACTO</span></NavLink>
                             </li>
                         </ul>
                     </div>

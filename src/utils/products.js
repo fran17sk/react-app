@@ -47,6 +47,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:85000 ,
         material: 'Aluminio',
+        envio: 750,
+        descuento: 0
     },
     {
         cod:1002,
@@ -61,6 +63,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:98000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1003,
@@ -75,6 +79,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:105000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1004,
@@ -89,6 +95,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:250000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1005,
@@ -103,6 +111,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:350000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1006,
@@ -117,6 +127,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1200000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1029,
@@ -131,6 +143,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1900000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1028,
@@ -145,6 +159,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1320000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1027,
@@ -159,6 +175,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:300000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1026,
@@ -173,6 +191,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:380000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1025,
@@ -187,6 +207,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:320000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1024,
@@ -201,6 +223,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:580000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1023,
@@ -215,6 +239,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:900000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1022,
@@ -229,6 +255,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1350000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1021,
@@ -243,6 +271,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:590000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1020,
@@ -257,6 +287,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:800000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
 
     },
     {
@@ -272,6 +304,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:790000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1018,
@@ -286,6 +320,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:700000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1017,
@@ -300,6 +336,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:790000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1016,
@@ -314,6 +352,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:685000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1015,
@@ -328,6 +368,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:485000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1014,
@@ -342,6 +384,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:899000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1013,
@@ -356,6 +400,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:790000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1012,
@@ -370,6 +416,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:685000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1011,
@@ -384,6 +432,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:485000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1010,
@@ -398,6 +448,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:325000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1009,
@@ -412,6 +464,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:285000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1008,
@@ -426,6 +480,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:95000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1007,
@@ -440,6 +496,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:900000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1030,
@@ -454,6 +512,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:2200000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1031,
@@ -468,6 +528,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1790000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1032,
@@ -481,6 +543,8 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1290000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },
     {
         cod:1033,
@@ -495,4 +559,6 @@ export const products = [
         descrption:"si nos organizamos, fiiiiiiiiii todooooooos",
         precio:1590000,
         material: 'Aluminio',
+        envio: 0,
+        descuento: 0
     },]

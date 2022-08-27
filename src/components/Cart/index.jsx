@@ -54,7 +54,7 @@ const Cart = () => {
             
         </section>
         <div>
-            <NavLink to='/'><span className="seguirComprando">Seguir comprando</span></NavLink>
+            <NavLink to='/bicicletas'><span className="seguirComprando">Seguir comprando</span></NavLink>
         </div>
         
         </>

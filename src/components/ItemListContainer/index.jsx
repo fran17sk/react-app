@@ -3,6 +3,7 @@ import {ItemList} from '../ItemList'
 import {customFetch} from '../../utils/customFetch'
 import { useState ,useEffect} from 'react';
 import { Loader } from '../Loader';
+import { Filters } from '../Filters';
 import img from '../../assets/img/portada_prods.jpg'
 import { useParams } from 'react-router-dom'
 
@@ -29,13 +30,16 @@ const ItemListContainer = () => {
     return (
     <>
         <img src={img}></img>
-        {!loading
-        ?
-        <ItemList listProduct={listProduct} />
-        :
-        <Loader/>
-        }
-
+        <div className='grid' id='gridAreas'>
+            <h1 id='titulo'>PRODUCTOS DISPONIBLES</h1>
+            <div id='filtros' className='custom-filters'><Filters/></div>
+            {!loading
+            ?
+            <ItemList listProduct={listProduct} />
+            :
+            <Loader/>
+            }
+        </div>
     </>)
 }
 
