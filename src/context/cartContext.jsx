@@ -39,7 +39,6 @@ export function CartContextProvider ({children}) {
         return cartList.reduce((acc,product)=>acc+=(product.quantity),0)
     }
 
-    console.log(CartContext)
     return (
         <CartContext.Provider value = {{
             addToCart,

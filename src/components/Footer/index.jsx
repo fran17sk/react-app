@@ -1,5 +1,6 @@
 import insta from '../../assets/img/insta.jpg'
 import face from '../../assets/img/face.jpg'
+import { NavLink } from 'react-router-dom'
 const Footer = () => {
 
 
@@ -8,14 +9,14 @@ const Footer = () => {
             <section className="seccionFotFlex fondogris">
             <div>
                 <h4>Categorias</h4>
-                <h5>Inicio</h5>
-                <h5>Bicicletas</h5>
-                <h5>Componentes</h5>
-                <h5>Accesorios</h5>
-                <h5>Indumentarias</h5>
-                <h5>Marcas</h5>
-                <h5>Productos</h5>
-                <h5>contacto</h5>
+                <NavLink to='/' ><h5>Inicio</h5></NavLink>
+                <NavLink to='/bicicletas'><h5>Bicicletas</h5></NavLink>
+                <NavLink to='/proximamente'><h5>Componentes</h5></NavLink>
+                <NavLink to='/proximamente'><h5>Accesorios</h5></NavLink>
+                <NavLink to='/proximamente'><h5>Indumentarias</h5></NavLink>
+                <NavLink to='/proximamente'><h5>Marcas</h5></NavLink>
+                <NavLink to='/proximamente'><h5>Productos</h5></NavLink>
+                <NavLink to='/proximamente'><h5>contacto</h5></NavLink>
             </div>
             <div>
                 <h4>Contactanos</h4>

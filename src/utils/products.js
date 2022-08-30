@@ -136,7 +136,7 @@ export const products = [
         nombre:"Trek Session 8",
         imagen:img7,
         marca:"Trek",
-        "modelo":2022,
+        modelo:2022,
         color:"Verde Militar",
         stock:1,
         initial:1,

@@ -6,6 +6,10 @@ import { Loader } from '../Loader';
 import { Filters } from '../Filters';
 import img from '../../assets/img/portada_prods.jpg'
 import { useParams } from 'react-router-dom'
+import { db } from '../Firebase';
+import { collection,getDoc,getDocs } from 'firebase/firestore'
+
+const productosCollection = collection(db,'bicicletas')
 
 const ItemListContainer = () => {
     const [listProduct, setListProduct] = useState([])
@@ -13,19 +17,31 @@ const ItemListContainer = () => {
     const {category} = useParams()
 
     useEffect(() => {
-        setLoading(true)
-        customFetch(products)
-            .then(res=>{
-                if(category){
-                    setLoading(false)
-                    setListProduct(res.filter(prod=>prod.categoria===category))
-                }else{
-                    setLoading(false)
-                    setListProduct(res)
+        const productosCollection = collection(db,'bicicletas')
+        const consulta = getDocs(productosCollection)
+
+        consulta
+        .then(snapshot=>{
+            const productos=snapshot.docs.map(doc=>{
+                return {
+                    ...doc.data(),
+                    cod:doc.id
                 }
-                
             })
+            setLoading(true)
+            if(category){
+                setLoading(false)
+                setListProduct(productos.filter(prod=>prod.categoria===category))
+            }else{
+                setLoading(false)
+                setListProduct(productos)
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
     },[category])
+    console.log(listProduct)
 
     return (
     <>

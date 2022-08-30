@@ -22,7 +22,7 @@ const Cart = () => {
                     </div>
                     {cartList.map(prod =>
                         <>
-                            <div id={prod.cod} className="item_carritoPreCompra">
+                            <div id={prod.cod} key={prod.cod} className="item_carritoPreCompra">
                                 <h6 className="nameProdItemCompra">{prod.nombre}</h6>
                                 <h5 className="cart-price">${prod.precio}</h5>
                                 <h5 className='product-quantity'>{prod.quantity}</h5>

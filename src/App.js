@@ -5,6 +5,7 @@ import {Home} from './components/Home'
 import {BrowserRouter} from 'react-router-dom'
 import {CartContextProvider}  from './context/cartContext';
 import Main from './components/Main';
+import './components/Firebase'
 
 function App() {
   return (
