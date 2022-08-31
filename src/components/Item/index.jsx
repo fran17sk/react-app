@@ -1,10 +1,8 @@
 import {Box,Image} from '@chakra-ui/react'
-import {ItemCount} from '../ItemCount'
 import { NavLink } from 'react-router-dom'
 
 
 const Item = ({product}) =>{
-    const img = product.imagen
     return (
         <>
             <div className='card-prod'>
