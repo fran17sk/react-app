@@ -1023,6 +1023,7 @@ border: 3px solid #bb2929;
   flex-flow: column nowrap;
   align-items: flex-end;
   border-top: #000 solid 1px;
+  max-width: 1000px;
 }
 .subtotal{
   display: flex;
@@ -1100,6 +1101,7 @@ border: 3px solid #bb2929;
 .productos_carrito_preCompra{
   width: 200%;
   margin-left: 80px;
+  max-width: 1000px;
 }
 .fondo_preCompra{
   background-color: rgb(218, 218, 218);
@@ -1354,4 +1356,28 @@ border: 3px solid #bb2929;
   font-weight: 500;
   font-size: 20px;
   color:rgb(76, 123, 50) ;
+}
+.TotalFlex{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.total-cart{
+  font-size: 30px;
+  font-weight: 900;
+  margin: 8px;
+}
+.DatosFlex{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+}
+.DatosFullFlex{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+}
+.DatosFullFlex form{
+  width: 100%;
+  margin: 10px;
 }

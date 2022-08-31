@@ -3,6 +3,8 @@ import { ItemCount } from '../ItemCount';
 import { NavLink } from 'react-router-dom';
 import { useCartContext } from '../../context/cartContext';
 
+
+const bikeImages = require.context('../../assets/img/bicicletas',true)
 const ItemDetail = (listProduct) => {
 
     const [isAdded,setIsAdded] = useState(false)
@@ -18,7 +20,7 @@ const ItemDetail = (listProduct) => {
         <>
             <div className="DetailFlex">
                 <div className="imagenDetail">
-                    <img src={listProduct.listProduct.imagen} alt={listProduct.listProduct.nombre} className='imagenProdDetail' />
+                    <img src={bikeImages(`./${listProduct.listProduct.cod}.jpg`)} alt={listProduct.listProduct.nombre} className='imagenProdDetail' />
                 </div>
                 <div className='infoDetail'>
                     <h1 className='nameProdDetail'>{listProduct.listProduct.nombre}</h1>
