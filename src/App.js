@@ -5,6 +5,8 @@ import {Home} from './components/Home'
 import {BrowserRouter} from 'react-router-dom'
 import {CartContextProvider}  from './context/cartContext';
 import Main from './components/Main';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './components/Firebase'
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <div className="espacioenblanco carou"></div>
           <Main/>
           <Footer/>
+          <ToastContainer/>
         </CartContextProvider>
       </BrowserRouter> 
     </>

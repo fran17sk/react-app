@@ -1,13 +1,86 @@
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import { useCartContext } from "../../context/cartContext"
-import { FormCart } from "../FormCart"
+import { ToastContainer, toast } from 'react-toastify';
+import { db } from '../Firebase'
+import { collection , addDoc , serverTimestamp} from "firebase/firestore"
 
 const bikeImages = require.context('../../assets/img/bicicletas',true)
 
 const Cart = () => {
 
     const {cartList,totalPrice,removeProduct,cleanCartList} = useCartContext()
-
+    const numers = [0,1,2,3,4,5,6,7,8,9]
+    const [surname,setsurname]=useState('')
+    const [name,setname]=useState('')
+    const [correo,setcorreo]=useState('')
+    const [phone,setphone]=useState(0)
+    const keySurName = (e) => {
+        if(e.key in numers){
+            e.preventDefault()
+        }
+    }
+    const clearForm = () => {
+        document.getElementById('formulario').reset()
+    }
+    const hundleChangeSurname = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setsurname(input)
+    }
+    const hundleChangeName = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setname(input)
+    }
+    const hundleChangeCorreo = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setcorreo(input)
+    }
+    const hundleChangePhone = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setphone(input)
+    }
+    const validarform = () => {
+        if(name!='' && surname !='' && correo!='' && phone>=999999){
+            return true
+        }else{
+            return false
+        }
+    }
+    const hundleClick = (e) => {
+        e.preventDefault()
+        const val = validarform()
+        console.log(val)
+        if(val){
+            const orden = {
+                buyer:{
+                    name: surname +" "+ name ,
+                    email:correo,
+                    phone:phone
+                },
+                items:cartList,
+                date:serverTimestamp(),
+                total:totalPrice()
+            }
+            const ordersCollection = collection(db,'ordenes')
+            const consulta = addDoc(ordersCollection,orden)
+            consulta
+            .then((res)=>{
+                toast.success(`Orden ${res.id} generada con exito!!!`)
+                clearForm()
+                cleanCartList()
+            })
+            .catch((err)=>{
+                toast.error(`Error ${err} al generar Orden`)
+            })
+        }else{
+            toast.error('Por favor rellena el formulario correctamente...')
+        }
+        
+    }
     return (
         <>
         <section className="ventana_pagar">
@@ -51,10 +124,31 @@ const Cart = () => {
                             <span className="total-cart">TOTAL:</span>
                             <span className="total-cart">${totalPrice()}</span>
                         </div>
-                        <div className="DatosFullFlex">
-                            <FormCart/>
+                        <div className="DatosFullFlex" >
+                            <form action="" class="formulario" id="formulario">
+                                <div class="formulario__grupo" id="grupo__apellido">
+                                    <label for="apellido" class="formulario__label">Apellido</label>
+                                    <input onKeyDown={keySurName} onChange={hundleChangeSurname} type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ej: Cruz"/>
+                                </div>
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label">Nombre</label>
+                                    <input onKeyDown={keySurName} onChange={hundleChangeName} type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ej: Franco"/>
+                                </div>
+                                <div class="formulario__grupo" id="grupo__correo">
+                                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                                    <input onChange={hundleChangeCorreo} type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com"/>
+                                </div>
+                                <div class="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" class="formulario__label">Teléfono</label>
+                                    <input onChange={hundleChangePhone} type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567"/>
+                                </div>
+                                <div class="formulario__mensaje" id="formulario__mensaje">
+                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                                </div>
+                                <button onClick={hundleClick} className="purchase-btn">GENERAR ORDEN</button>
+                            </form>
                         </div>
-                        <button className="purchase-btn">FINALIZAR COMPRA</button>
+                        
                     </div>
                 </>
             }
