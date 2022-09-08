@@ -9,7 +9,7 @@ const ItemDetail = (listProduct) => {
 
     const [isAdded,setIsAdded] = useState(false)
 
-    const {addToCart,cartList} = useCartContext()
+    const {addToCart,cartList,guardarCart} = useCartContext()
 
     const onAdd = (quantity) => {
         addToCart(listProduct.listProduct,quantity)

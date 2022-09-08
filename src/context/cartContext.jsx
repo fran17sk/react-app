@@ -6,6 +6,7 @@ export const useCartContext = () => useContext(CartContext)
 export function CartContextProvider ({children}) {
 
     const [cartList,setCartList]=useState([])
+    
 
     const isInCart = (cod) => cartList.find(prod => prod.cod === cod)
 
@@ -46,6 +47,7 @@ export function CartContextProvider ({children}) {
             cleanCartList,
             totalPrice,
             totalProducts,
+            setCartList,
             cartList
         }}>{children}</CartContext.Provider>
     )

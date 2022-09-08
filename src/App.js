@@ -1,4 +1,5 @@
 import './App.css';
+import "animate.css/animate.min.css";
 import { Navbar } from './components/Navbar';
 import {Footer} from './components/Footer'
 import {Home} from './components/Home'

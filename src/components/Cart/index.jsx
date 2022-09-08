@@ -10,6 +10,7 @@ const bikeImages = require.context('../../assets/img/bicicletas',true)
 const Cart = () => {
 
     const {cartList,totalPrice,removeProduct,cleanCartList} = useCartContext()
+    const ordenes = JSON.parse(localStorage.getItem('Ordenes'))||[]
     const numers = [0,1,2,3,4,5,6,7,8,9]
     const [surname,setsurname]=useState('')
     const [name,setname]=useState('')
@@ -53,7 +54,6 @@ const Cart = () => {
     const hundleClick = (e) => {
         e.preventDefault()
         const val = validarform()
-        console.log(val)
         if(val){
             const orden = {
                 buyer:{
@@ -71,6 +71,8 @@ const Cart = () => {
             .then((res)=>{
                 toast.success(`Orden ${res.id} generada con exito!!!`)
                 clearForm()
+                ordenes.push(res.id)
+                localStorage.setItem('Ordenes',JSON.stringify(ordenes))
                 cleanCartList()
             })
             .catch((err)=>{
@@ -125,25 +127,25 @@ const Cart = () => {
                             <span className="total-cart">${totalPrice()}</span>
                         </div>
                         <div className="DatosFullFlex" >
-                            <form action="" class="formulario" id="formulario">
-                                <div class="formulario__grupo" id="grupo__apellido">
-                                    <label for="apellido" class="formulario__label">Apellido</label>
-                                    <input onKeyDown={keySurName} onChange={hundleChangeSurname} type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ej: Cruz"/>
+                            <form action="" className="formulario" id="formulario">
+                                <div className="formulario__grupo" id="grupo__apellido">
+                                    <label for="apellido" className="formulario__label">Apellido</label>
+                                    <input onKeyDown={keySurName} onChange={hundleChangeSurname} type="text" className="formulario__input" name="apellido" id="apellido" placeholder="Ej: Cruz"/>
                                 </div>
-                                <div class="formulario__grupo" id="grupo__nombre">
-                                    <label for="nombre" class="formulario__label">Nombre</label>
-                                    <input onKeyDown={keySurName} onChange={hundleChangeName} type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ej: Franco"/>
+                                <div className="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" className="formulario__label">Nombre</label>
+                                    <input onKeyDown={keySurName} onChange={hundleChangeName} type="text" className="formulario__input" name="nombre" id="nombre" placeholder="Ej: Franco"/>
                                 </div>
-                                <div class="formulario__grupo" id="grupo__correo">
-                                    <label for="correo" class="formulario__label">Correo Electrónico</label>
-                                    <input onChange={hundleChangeCorreo} type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com"/>
+                                <div className="formulario__grupo" id="grupo__correo">
+                                    <label for="correo" className="formulario__label">Correo Electrónico</label>
+                                    <input onChange={hundleChangeCorreo} type="email" className="formulario__input" name="correo" id="correo" placeholder="correo@correo.com"/>
                                 </div>
-                                <div class="formulario__grupo" id="grupo__telefono">
-                                    <label for="telefono" class="formulario__label">Teléfono</label>
-                                    <input onChange={hundleChangePhone} type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567"/>
+                                <div className="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" className="formulario__label">Teléfono</label>
+                                    <input onChange={hundleChangePhone} type="number" className="formulario__input" name="telefono" id="telefono" placeholder="4491234567"/>
                                 </div>
-                                <div class="formulario__mensaje" id="formulario__mensaje">
-                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                                <div className="formulario__mensaje" id="formulario__mensaje">
+                                    <p><i className="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                                 </div>
                                 <button onClick={hundleClick} className="purchase-btn">GENERAR ORDEN</button>
                             </form>

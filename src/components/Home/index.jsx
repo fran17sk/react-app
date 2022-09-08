@@ -11,6 +11,8 @@ import montain from '../../assets/img/mountain.jpg'
 import ruta from "../../assets/img/ruta.jpg"
 import wpp from '../../assets/img/wpp.png'
 import { NavLink } from 'react-router-dom'
+import  Iframe  from 'react-iframe'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Home = () => {
     return (
@@ -89,17 +91,21 @@ const Home = () => {
                 <NavLink to='/bicicletas/category/Ruta'><span><h2>RUTERAS</h2></span></NavLink>
             </div>
         </div>
-        <div className="seccionFlex fondonav"><h2 className="subtitulo">SUCURSALES</h2></div>
+        <div className="seccionFlex fondonav"><h2 className="subtitulo"><AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">
+    <h2>Look what i am doing</h2>
+</AnimationOnScroll></h2></div>
         <div className="seccionFlex">
             <div>
                 <h3 className="sucursalesTitle">CASA CENTRAL</h3>
-                
+                <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.7633297224993!2d-65.44011218545913!3d-24.769302513187867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3eb6d7e6d89%3A0xe9bcdee17f2e8aed!2sPalito%20Mac%C3%ADas%20Bike%20Store!5e0!3m2!1ses-419!2sar!4v1650148566610!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></Iframe>
             </div>
             <div>
                 <h3 className="sucursalesTitle">SALTA - SUR</h3>
-                
+                <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.7633297224993!2d-65.44011218545913!3d-24.769302513187867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3eb6d7e6d89%3A0xe9bcdee17f2e8aed!2sPalito%20Mac%C3%ADas%20Bike%20Store!5e0!3m2!1ses-419!2sar!4v1650148566610!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></Iframe>
             </div>
         </div>
+        
+        
         <div>
             <a href="https://api.whatsapp.com/send?phone=543874756154"><img src={wpp} alt="" className="rounded-circle wapp-fixed wapp"/></a>
         </div>

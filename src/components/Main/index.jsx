@@ -3,6 +3,7 @@ import { ItemListContainer } from '../ItemListContainer'
 import { ItemDetailConteiner } from '../ItemDetailConteiner'
 import { Cart } from '../Cart'
 import { Home } from '../Home'
+import { Contacto } from '../Contacto'
 import { Proximamente } from '../Proximamente'
 const Main = () =>{
     return (
@@ -13,6 +14,7 @@ const Main = () =>{
             <Route path='/bicicletas/category/:category' element={<ItemListContainer/>}></Route>
             <Route path='/product/:cod' element={<ItemDetailConteiner/>}></Route>
             <Route path='/cart' element={<Cart/>}></Route>
+            <Route path='/sucursal/contactanos' element={<Contacto/>}></Route>
         </Routes>
     )
     

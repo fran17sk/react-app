@@ -6,7 +6,7 @@ const CartWidget = () => {
     const {totalProducts} = useCartContext()
     return (<>
         <NavLink to='/cart'>
-            <i id="cart" class="fas fa-shopping-cart color"></i>
+            <i id="cart" className="fas fa-shopping-cart color"></i>
             <span className ="cart-quantity">{totalProducts()}</span>
         </NavLink>
     </>);
