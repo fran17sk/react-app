@@ -76,7 +76,7 @@ const Home = () => {
             <NavLink to='/proximamente'><span><h2>ACCESORIOS</h2></span></NavLink>
             </div>
         </div>
-        <div className="seccionFlex fondonav"><h2 className="subtitulo">BICIS DE COMPETENCIA</h2></div>
+        <div className="seccionFlex fondonav"><h2 className="subtitulo"><AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">BICICLETAS DE COMPETENCIAS</AnimationOnScroll></h2></div>
         <div className="seccionFlex">
             <div>
                 <NavLink to='/bicicletas/category/Downhill'><img src={downhill} alt="" className="bicis"/></NavLink>
@@ -91,9 +91,7 @@ const Home = () => {
                 <NavLink to='/bicicletas/category/Ruta'><span><h2>RUTERAS</h2></span></NavLink>
             </div>
         </div>
-        <div className="seccionFlex fondonav"><h2 className="subtitulo"><AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">
-    <h2>Look what i am doing</h2>
-</AnimationOnScroll></h2></div>
+        <div className="seccionFlex fondonav"><h2 className="subtitulo"><AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">SUCURSALES</AnimationOnScroll></h2></div>
         <div className="seccionFlex">
             <div>
                 <h3 className="sucursalesTitle">CASA CENTRAL</h3>

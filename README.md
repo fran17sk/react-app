@@ -143,3 +143,16 @@ ej6
 function resumenDeLaSuscripcion(cliente){
   return (cliente.nombre+' se suscribió hace '+(2021-cliente.anioSuscripcion+' años y leyó '+cliente.librosLeidos.length+' libros'))
 }
+
+
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MARCAS
+                                </a>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a className="dropdown-item" href="https://www.trekbikes.com/internationalspanish/es_IN_TL/">TREK</a></li>
+                                    <li><a className="dropdown-item" href="https://venzoargentina.com.ar/">VENZO</a></li>
+                                    <li><a className="dropdown-item" href="https://giant-bicycles.com.ar/">GIANT</a></li>
+                                    <li><a className="dropdown-item" href="https://www.scott-sports.com/es/es/">SCOTT</a></li>
+                                </ul>
+                            </li>
