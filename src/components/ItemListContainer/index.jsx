@@ -8,7 +8,6 @@ import { useParams } from 'react-router-dom'
 import { db } from '../Firebase';
 import { collection,getDoc,getDocs, query, where } from 'firebase/firestore'
 
-const productosCollection = collection(db,'bicicletas')
 
 const ItemListContainer = () => {
     const [listProduct, setListProduct] = useState([])

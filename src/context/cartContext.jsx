@@ -2,11 +2,21 @@ import { createContext,useState,useContext } from "react"
 
 const CartContext = createContext([])
 export const useCartContext = () => useContext(CartContext)
-
+const aux = JSON.parse(window.localStorage.getItem('carrito')) || []
 export function CartContextProvider ({children}) {
 
-    const [cartList,setCartList]=useState([])
+    const [cartList,setCartList]=useState(
+        aux
+    )
     
+    const setLocalStorage = value => {
+        try{
+            setCartList(value)
+            window.localStorage.setItem('carrito',JSON.stringify(value))
+        }catch(e){
+            console.log('error')
+        }
+    }
 
     const isInCart = (cod) => cartList.find(prod => prod.cod === cod)
 
@@ -21,17 +31,21 @@ export function CartContextProvider ({children}) {
                 }
                 
             })
-            setCartList(newCart)
+            setLocalStorage(newCart)
         }else{
             const newProduct = {...item,quantity:quantity}
-            setCartList([...cartList,newProduct])
+            setLocalStorage([...cartList,newProduct])
         }
     }
 
-    const removeProduct = (cod) => setCartList(cartList.filter(prod=>prod.cod!=cod))
+    const removeProduct = (cod) => {
+        setLocalStorage(cartList.filter(prod=>prod.cod!=cod))
+    }
 
-    const cleanCartList = () => setCartList([])
-
+    const cleanCartList = () => {
+        setCartList([])
+        window.localStorage.removeItem('carrito')
+    }
     const totalPrice = () => {
         return cartList.reduce((acc,product)=>acc+=(product.precio*product.quantity),0)
     }
