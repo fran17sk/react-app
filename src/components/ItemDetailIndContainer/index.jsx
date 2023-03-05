@@ -7,7 +7,7 @@ import { getDoc, collection, doc } from "firebase/firestore";
 
 
 
-const ItemDetailConteiner = () => {
+const ItemDetailIndConteiner = () => {
 
     const [listProduct,setListProduct]=useState({})
     const [loading,setLoading]=useState(true)
@@ -15,7 +15,7 @@ const ItemDetailConteiner = () => {
     
 
     useEffect(()=>{
-        const productosCollection = collection(db,'bicicletas')
+        const productosCollection = collection(db,'indumentaria')
         const referencia = doc(productosCollection,cod)
         console.log(referencia)
         const consulta = getDoc(referencia)
@@ -42,4 +42,4 @@ const ItemDetailConteiner = () => {
     )
 }
 
-export {ItemDetailConteiner};
+export {ItemDetailIndConteiner};

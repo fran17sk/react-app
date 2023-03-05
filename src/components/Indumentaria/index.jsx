@@ -8,13 +8,13 @@ import { db } from '../Firebase';
 import { collection,getDoc,getDocs, query, where } from 'firebase/firestore'
 
 
-const ItemListContainer = () => {
+const IndumentariaContainer = () => {
     const [listProduct, setListProduct] = useState([])
     const [loading,setLoading] = useState(true)
     const {category} = useParams()
 
     useEffect(() => {
-        const productosCollection = collection(db,'bicicletas')
+        const productosCollection = collection(db,'indumentaria')
         if(category){
             const filtro = query(productosCollection,where('categoria','==',category))
             const consulta = getDocs(filtro)
@@ -28,6 +28,7 @@ const ItemListContainer = () => {
                     }
                 })
                 setListProduct(productos)
+                console.log(productos)
             })
             .catch(err=>{
                 console.log(err)
@@ -44,6 +45,7 @@ const ItemListContainer = () => {
                     }
                 })
                 setListProduct(productos)
+                console.log(productos)
             })
             .catch(err=>{
             console.log(err)
@@ -67,4 +69,4 @@ const ItemListContainer = () => {
     </>)
 }
 
-export {ItemListContainer} ;
+export {IndumentariaContainer} ;

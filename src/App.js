@@ -1,6 +1,6 @@
 import './App.css';
 import "animate.css/animate.min.css";
-import { Navbar } from './components/Navbar';
+import {Navbar} from './components/Navbar';
 import {Footer} from './components/Footer'
 import {Home} from './components/Home'
 import {BrowserRouter} from 'react-router-dom'

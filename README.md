@@ -3,7 +3,6 @@
 ## Descripcion del projecto:
 Este es un proyecto de un e-commerce para la compra de productos de ciclismo, como bicicletas, y gestionarlo mediante una base de datos en linea.
 
-
 ## Cómo correr este proyecto:
 Este proyecto se encuentra deployeado en Vercel, podés ingresar y probarlo en el siguiente link:
 

@@ -16,6 +16,10 @@ const Cart = () => {
     const [name,setname]=useState('')
     const [correo,setcorreo]=useState('')
     const [phone,setphone]=useState(0)
+    const [titular,setTitular] = useState('')
+    const [number,setnumber] = useState('')
+    const [dni,setDni] = useState('')
+    const [cvs,setCvs] = useState('')
     const keySurName = (e) => {
         if(e.key in numers){
             e.preventDefault()
@@ -44,6 +48,28 @@ const Cart = () => {
         const input = e.target.value
         setphone(input)
     }
+    const hundleChangeNumber = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setnumber(input)
+    }
+    const hundleChangeDni = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setDni(input)
+    }
+    const hundleChangeTitular = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setTitular(input)
+    }
+    const hundleChangeCvs = (e) => {
+        e.preventDefault()
+        const input = e.target.value
+        setCvs(input)
+    }
+
+
     const validarform = () => {
         if(name!='' && surname !='' && correo!='' && phone>=999999){
             return true
@@ -60,6 +86,12 @@ const Cart = () => {
                     name: surname +" "+ name ,
                     email:correo,
                     phone:phone
+                },
+                DataFac:{
+                    titular : titular,
+                    dni : dni,
+                    num : number,
+                    cvs : cvs
                 },
                 items:cartList,
                 date:serverTimestamp(),
@@ -143,6 +175,26 @@ const Cart = () => {
                                 <div className="formulario__grupo" id="grupo__telefono">
                                     <label for="telefono" className="formulario__label">Teléfono</label>
                                     <input onChange={hundleChangePhone} type="number" className="formulario__input" name="telefono" id="telefono" placeholder="4491234567"/>
+                                </div>
+                                <div className="formulario__mensaje" id="formulario__mensaje">
+                                    <p><i className="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                                </div>
+                                <h3>DATOS DE FACTURACION</h3>
+                                <div className="formulario__grupo" id="grupo__apellido">
+                                    <label for="titular" className="formulario__label">Titular de la tarjeta</label>
+                                    <input onKeyDown={keySurName} onChange={hundleChangeTitular} type="text" className="formulario__input" name="titular" id="titular" placeholder="Tal cual como aparece en la tarjeta"/>
+                                </div>
+                                <div className="formulario__grupo" id="grupo__nombre">
+                                    <label for="numbtar" className="formulario__label">Numero de tarjeta</label>
+                                    <input onChange={hundleChangeNumber} type="text" className="formulario__input" name="numbtar" id="numbtar" placeholder="VISA / MASTERCARD"/>
+                                </div>
+                                <div className="formulario__grupo" id="grupo__correo">
+                                    <label for="correo" className="formulario__label">Documento De Identidad</label>
+                                    <input onChange={hundleChangeDni} type="number" className="formulario__input" name="dni" id="dni" placeholder="DNI"/>
+                                </div>
+                                <div className="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" className="formulario__label">Codigo de Seguridad</label>
+                                    <input onChange={hundleChangeCvs} type="password" className="formulario__input" name="cvs" id="cvs" placeholder="***"/>
                                 </div>
                                 <div className="formulario__mensaje" id="formulario__mensaje">
                                     <p><i className="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
