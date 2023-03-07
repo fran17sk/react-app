@@ -17,6 +17,7 @@ export function CartContextProvider ({children}) {
             console.log('error')
         }
     }
+    
 
     const isInCart = (cod) => cartList.find(prod => prod.cod === cod)
 
